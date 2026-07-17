@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: TU_USUARIO_GITHUB/prevenprofe
+  branch: main
+
+media_folder: "uploads"
+public_folder: "/uploads"
+site_url: "https://TU-SITIO.netlify.app"
+display_url: "https://TU-SITIO.netlify.app"
+logo_url: "/assets/logo-prevenprofe.png"
+locale: "es"
+publish_mode: simple
+
+collections:
+  - name: "contenidos"
+    label: "Contenido de la web"
+    files:
+      - name: "resources"
+        label: "Recursos docentes"
+        file: "content/resources.json"
+        format: "json"
+        fields:
+          - label: "Recursos"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.category}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Categoría", name: "category", widget: "select", options: ["IPE I", "IPE II", "PRL", "Emprendimiento", "Empleabilidad", "Digitalización", "Sostenibilidad", "Proyecto Intermodular"]}
+              - {label: "Tipo", name: "type", widget: "select", options: ["pdf", "link", "video", "audio"]}
+              - {label: "Archivo o URL", name: "url", widget: "string"}
+      - name: "posts"
+        label: "Vídeos, pódcast y artículos"
+        file: "content/posts.json"
+        format: "json"
+        fields:
+          - label: "Publicaciones"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.kind}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Resumen", name: "excerpt", widget: "text"}
+              - {label: "Tipo", name: "kind", widget: "select", options: ["Artículo", "YouTube", "Pódcast", "Noticia", "Investigación"]}
+              - {label: "Fecha o etiqueta", name: "date", widget: "string"}
+              - {label: "URL", name: "url", widget: "string"}
+      - name: "projects"
+        label: "Proyectos"
+        file: "content/projects.json"
+        format: "json"
+        fields:
+          - label: "Proyectos"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}} · {{fields.status}}"
+            fields:
+              - {label: "Título", name: "title", widget: "string"}
+              - {label: "Descripción", name: "description", widget: "text"}
+              - {label: "Estado", name: "status", widget: "select", options: ["Idea", "En desarrollo", "Activo", "Publicado", "Buscando colaboración"]}

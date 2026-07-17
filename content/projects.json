@@ -1,0 +1,24 @@
+{
+  "items": [
+    {
+      "title": "TEMPE",
+      "description": "Marco de investigación sobre la tecnología como mediadora del potencial emprendedor en Formación Profesional.",
+      "status": "En desarrollo"
+    },
+    {
+      "title": "Emprendiendo en FP",
+      "description": "Producción de pódcast con alumnado, entrevistas y experiencias vinculadas al emprendimiento y el empleo.",
+      "status": "Activo"
+    },
+    {
+      "title": "Aula ATECA · FrayLab",
+      "description": "Tecnología, simulación, realidad virtual y proyectos interdisciplinares conectados con los sectores productivos.",
+      "status": "Activo"
+    },
+    {
+      "title": "Aula de Emprendimiento",
+      "description": "Retos, metodologías activas y colaboración con empresas para transformar ideas en proyectos.",
+      "status": "Activo"
+    }
+  ]
+}

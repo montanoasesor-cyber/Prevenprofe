@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "title": "Canal PrevenProfe",
+      "excerpt": "Vídeos breves, explicaciones y experiencias de aula sobre prevención, empleabilidad e innovación.",
+      "kind": "YouTube",
+      "date": "Canal oficial",
+      "url": "https://www.youtube.com/@Prevenprofe"
+    },
+    {
+      "title": "Emprendiendo en FP",
+      "excerpt": "Pódcast realizado con alumnado para acercar experiencias emprendedoras y profesionales al aula.",
+      "kind": "Pódcast",
+      "date": "iVoox",
+      "url": "https://www.ivoox.com/emprendiendo-fp_pr_posts_2485825_1.html"
+    },
+    {
+      "title": "Perfil investigador",
+      "excerpt": "Publicaciones, filiación y producción académica vinculadas a Formación Profesional y emprendimiento.",
+      "kind": "Investigación",
+      "date": "ORCID",
+      "url": "https://orcid.org/0009-0003-8202-8831"
+    }
+  ]
+}

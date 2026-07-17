@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "title": "Introducción al cálculo de nóminas",
+      "description": "Material base para comprender devengos, deducciones, bases de cotización y líquido a percibir.",
+      "category": "IPE I",
+      "type": "pdf",
+      "url": "#"
+    },
+    {
+      "title": "Modalidades de contratación",
+      "description": "Guía visual para identificar los principales contratos y resolver supuestos prácticos.",
+      "category": "IPE I",
+      "type": "pdf",
+      "url": "#"
+    },
+    {
+      "title": "Evaluación de riesgos",
+      "description": "Plantilla para detectar peligros, estimar riesgos y proponer medidas preventivas.",
+      "category": "PRL",
+      "type": "pdf",
+      "url": "#"
+    },
+    {
+      "title": "Autoconocimiento profesional",
+      "description": "Actividad para analizar competencias, intereses y objetivos de empleabilidad.",
+      "category": "IPE II",
+      "type": "pdf",
+      "url": "#"
+    },
+    {
+      "title": "Modelo de idea de negocio",
+      "description": "Ficha para transformar una oportunidad detectada en una propuesta de valor inicial.",
+      "category": "Emprendimiento",
+      "type": "pdf",
+      "url": "#"
+    },
+    {
+      "title": "Marca profesional y redes",
+      "description": "Secuencia para construir una identidad profesional coherente y responsable.",
+      "category": "Empleabilidad",
+      "type": "link",
+      "url": "#"
+    }
+  ]
+}
