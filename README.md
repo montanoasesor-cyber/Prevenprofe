@@ -1,24 +1,27 @@
-# PrevenProfe CMS
+# PrevenProfe 1.0
 
-Esta versión incorpora una web pública y un panel de administración en `/admin/` basado en Decap CMS.
+Plataforma educativa con web pública y panel de contenidos en `/admin/`, construido con Decap CMS, GitHub y Netlify.
 
-## Importante
-El panel necesita que el proyecto esté conectado a un repositorio GitHub. No funciona con un despliegue manual aislado porque las publicaciones deben guardarse en algún lugar permanente.
+## Datos configurados
 
-## Preparación
-1. Crea en GitHub un repositorio llamado `prevenprofe`.
-2. Sube todo el contenido de esta carpeta a ese repositorio.
-3. En `admin/config.yml`, sustituye `TU_USUARIO_GITHUB/prevenprofe` por tu usuario y repositorio.
-4. Conecta ese repositorio a Netlify mediante “Importar un repositorio Git”.
-5. Sustituye `TU-SITIO` por el subdominio real de Netlify.
-6. Configura la autenticación GitHub/OAuth para Decap CMS siguiendo la documentación oficial.
-7. Entra en `https://tu-sitio.netlify.app/admin/`.
+- Repositorio: `montanoasesor-cyber/Prevenprofe`
+- Web: `https://guileless-jalebi-ce4981.netlify.app`
+- YouTube: `https://www.youtube.com/@Prevenprofe`
+- TikTok: `https://www.tiktok.com/@prevenprofe`
+- ORCID: `https://orcid.org/0009-0003-8202-8831`
+- iVoox: `https://www.ivoox.com/emprendiendo-fp_pr_posts_2485825_1.html`
 
-## Contenidos editables
-- Recursos docentes
-- Vídeos, pódcast, artículos y noticias
-- Proyectos
-- Subida de archivos a `/uploads`
+## Activación del panel
 
-## Nota técnica
-Netlify ha marcado Git Gateway como obsoleto. Por eso esta plantilla utiliza el backend directo de GitHub.
+1. En Netlify abre **Configuración del proyecto → Identidad** y activa Netlify Identity.
+2. En preferencias de registro selecciona **Solo por invitación**.
+3. En **Servicios → Git Gateway**, activa Git Gateway.
+4. En Identity invita tu propio correo.
+5. Abre el mensaje de invitación y establece la contraseña.
+6. Entra en `https://guileless-jalebi-ce4981.netlify.app/admin/`.
+
+Desde el panel puedes editar recursos, publicaciones y proyectos. Al pulsar **Publicar**, Decap CMS guarda el cambio en GitHub y Netlify vuelve a desplegar la web automáticamente.
+
+## Actualizar esta versión
+
+Sube todos los archivos de esta carpeta al repositorio, sustituyendo los existentes. GitHub generará un nuevo commit y Netlify lo publicará automáticamente.

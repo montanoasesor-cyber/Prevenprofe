@@ -1,19 +1,18 @@
 backend:
-  name: github
-  repo: TU_USUARIO_GITHUB/prevenprofe
+  name: git-gateway
   branch: main
 
 media_folder: "uploads"
 public_folder: "/uploads"
-site_url: "https://TU-SITIO.netlify.app"
-display_url: "https://TU-SITIO.netlify.app"
+site_url: "https://guileless-jalebi-ce4981.netlify.app"
+display_url: "https://guileless-jalebi-ce4981.netlify.app"
 logo_url: "/assets/logo-prevenprofe.png"
 locale: "es"
 publish_mode: simple
 
 collections:
   - name: "contenidos"
-    label: "Contenido de la web"
+    label: "Contenido de PrevenProfe"
     files:
       - name: "resources"
         label: "Recursos docentes"
@@ -27,11 +26,14 @@ collections:
             fields:
               - {label: "Título", name: "title", widget: "string"}
               - {label: "Descripción", name: "description", widget: "text"}
-              - {label: "Categoría", name: "category", widget: "select", options: ["IPE I", "IPE II", "PRL", "Emprendimiento", "Empleabilidad", "Digitalización", "Sostenibilidad", "Proyecto Intermodular"]}
+              - {label: "Categoría", name: "category", widget: "select", options: ["IPE I", "IPE II", "PRL", "Nóminas", "Contratos", "Emprendimiento", "Empleabilidad", "Digitalización", "Sostenibilidad", "Proyecto Intermodular"]}
               - {label: "Tipo", name: "type", widget: "select", options: ["pdf", "link", "video", "audio"]}
-              - {label: "Archivo o URL", name: "url", widget: "string"}
+              - label: "Archivo o URL"
+                name: "url"
+                widget: "string"
+                hint: "Puedes pegar una URL o subir primero el archivo en el campo multimedia del panel."
       - name: "posts"
-        label: "Vídeos, pódcast y artículos"
+        label: "Vídeos, pódcast, artículos y noticias"
         file: "content/posts.json"
         format: "json"
         fields:
@@ -43,7 +45,7 @@ collections:
               - {label: "Título", name: "title", widget: "string"}
               - {label: "Resumen", name: "excerpt", widget: "text"}
               - {label: "Tipo", name: "kind", widget: "select", options: ["Artículo", "YouTube", "Pódcast", "Noticia", "Investigación"]}
-              - {label: "Fecha o etiqueta", name: "date", widget: "string"}
+              - {label: "Fecha", name: "date", widget: "datetime", format: "DD/MM/YYYY", date_format: "DD/MM/YYYY", time_format: false}
               - {label: "URL", name: "url", widget: "string"}
       - name: "projects"
         label: "Proyectos"
